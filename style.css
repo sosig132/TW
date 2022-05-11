@@ -1,0 +1,462 @@
+.urbex {
+    background-image: url(images/2109.webp);
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about {
+
+    /*background-image: url("images/anders-jilden-medium-5d01610e.jpg");*/
+    background-color:rgb(187, 186, 186);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+
+}
+
+/*.background-image-etc{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    padding-top: 0%;
+    width: 100%;
+}
+
+.background-image-etc img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%
+}*/
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav button{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color:#111;  
+    border:0;
+    cursor: pointer;
+    bottom:100px;
+
+    position:absolute;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav button:hover{
+    color:#f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .dropdown-content{
+    visibility: hidden;
+    position:relative;
+    background-color:rgb(14, 13, 13);
+    padding-left:20px;
+    padding-bottom:10px;
+    max-height:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.dropdown-content a{
+    display:block;
+}
+
+.dropdown:hover +.dropdown-content{
+    transition:0.5s;
+    max-height:1000px;
+    visibility:visible;}
+
+.dropdown-content:hover{
+    visibility: visible;
+    max-height:1000px;
+}
+
+
+
+
+
+
+
+#menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    flex: 1;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    visibility: visible;
+}
+
+.img-responsive {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    flex: 1;
+    top: 30px;
+
+}
+
+
+#like {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.row {
+    top: 20px;
+    position: absolute;
+    padding: 40px;
+    color: rgb(17, 216, 17);
+    display: flex;
+    z-index: -1;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.row p {
+    font-size: 22px;
+}
+
+.row p a {
+    color: rgb(17, 216, 17);
+}
+
+.col1{
+    padding-top:50px;
+    top:50px;
+    flex: 50%;
+}
+
+
+
+.col2 {
+    flex: 50%;
+}
+
+.col2 img {
+    width: 100%;
+}
+
+.col2 video {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.desc {
+    text-align: right !important;
+    font-size: 15px !important;
+}
+
+
+
+.lista-urbex li {
+    display: block;
+    text-align: left;
+
+}
+
+.lista-urbex li a {
+    color: rgb(17, 216, 17);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#ica {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ica:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dam{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    width:90%;
+    height:90%;
+    border-radius:15px;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.dam1{
+    text-align:left;
+    width:100%;
+    animation-duration:3s;
+    left:10px;
+    flex:50%;
+    margin-left:auto;
+}
+.dam2{
+    width:100%;
+    flex:50%;
+    
+}
+
+.page{
+    background:white;
+    width:50%;
+    height:98%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display:flex;
+}
+
+.page1{
+    flex:50%;
+}
+
+.page2{
+    flex:50%;
+}
+
+#dambutton{
+    width:100px;
+    border:0;
+    padding:12px 10px;
+    margin-left:30%;
+    outline:none;
+    color:#fff;
+    background:#000;
+    border-radius:6px;
+    cursor: pointer;
+}
+
+.sss{
+    padding-left:0px !important;
+}
+
+#dambutton:hover{
+    width:120px;
+    transition:0.3s;
+}
+
+.dam .dam1 h6{
+    padding-left:25%;
+}
+
+.dam1 *{
+    padding-left:30%;
+}
+#sss::before{
+    content:'';
+    width:10px;
+    height:20%;
+    background:#000;
+    position:absolute;
+
+    left:-4px;
+    top:8px;
+    
+
+}
+
+
+@keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform:translateX(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight{
+    animation-name: fadeInRight;
+}
+
+.fadeInLeft{
+    animation-name: fadeInLeft;
+}
+
+.dam2 img{
+    position: relative;
+    /*top: 50%;
+    left: 50%;*/
+    animation-duration: 3s;
+    width:100%;
+    max-width:1000px;
+    bottom:0;
+}
+
+@media screen and (max-width:600px) {
+
+
+
+    .row {
+        top: 20px;
+    }
+
+    .col1,
+    .col2 {
+        flex: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:901px) {
+    .row {
+        top: 20px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

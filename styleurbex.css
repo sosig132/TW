@@ -1,0 +1,300 @@
+.urbex{
+    background-image:url(images/2109.webp);
+    background-color:black;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.about{
+
+    background-image: url("images/anders-jilden-medium-5d01610e.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+
+}
+
+
+/*.background-image-etc{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    padding-top: 0%;
+    width: 100%;
+}
+
+.background-image-etc img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%
+}*/
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav a .dropdown{
+    visibility: hidden;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+
+#menu{
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    flex: 1;
+    top: 10px;
+    left: 30px;
+    position:fixed;
+    visibility: visible;
+}
+
+.img-responsive{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    flex:1;
+    top:30px;
+    
+}
+
+
+#like{
+    position:relative;
+    display:block;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+
+
+.row{
+    top:100px;
+    position:absolute;
+    padding:100px;
+    color:rgb(17, 216, 17);
+    display:flex;
+    z-index:-1;
+    text-align:left;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.row p{
+    font-size:22px;
+}
+
+.row p a{
+    color: rgb(17, 216, 17);
+}
+
+.col1{
+    flex:50%;
+}
+
+.col2{
+    flex:50%;
+}
+
+.col2 img{
+    width:100%;
+}
+
+.col2 video{
+    width:100%;
+    cursor:pointer;
+
+}
+
+.desc{
+    text-align:right !important;
+    font-size:15px !important;
+}
+
+
+
+.lista-urbex li{
+    display:block;
+    text-align:left;
+
+}
+
+.lista-urbex li a{
+    color:rgb(17, 216, 17);
+    text-decoration:underline;
+    font-style:italic;
+}
+
+#ica {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ica:hover {
+    opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    padding-top: 200px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 8%;
+    right: 25%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+
+
+
+    .row{
+        top:250px;
+    }
+
+    .col1, .col2{
+        flex:100%;
+    }
+    .modal{
+        top:30%;
+    }
+    .close{
+        top:20%;
+    }
+}
+
+@media screen and (max-width:901px){
+    .row {
+        top: 350px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
