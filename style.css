@@ -35,27 +35,18 @@
 
 .sidenav {
     height: 100%;
-    /* 100% Full-height */
     width: 0;
-    /* 0 width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Stay on top */
     top: 0;
-    /* Stay at the top */
     left: 0;
     background-color: #111;
-    /* Black*/
     overflow-x: hidden;
-    /* Disable horizontal scroll */
+
     padding-top: 60px;
-    /* Place content 60px from the top */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -80,7 +71,6 @@
     position:absolute;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
@@ -89,7 +79,6 @@
     color:#f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -138,6 +127,7 @@
     left: 10px;
     position: fixed;
     visibility: visible;
+    z-index:1;
 }
 
 .img-responsive {
@@ -305,21 +295,24 @@
     width:90%;
     height:90%;
     border-radius:15px;
-    justify-content: center;
-    display:flex;
-    flex-wrap: wrap;
+    display:inline-flex;
     align-items:center;
+    flex-wrap:wrap;    
+}
+
+.dam > div:nth-child(1){
+    flex:20%;
 }
 
 .dam1{
     text-align:left;
     width:100%;
     animation-duration:3s;
-    left:10px;
-    flex:50%;
-    margin-left:auto;
+    flex:30%;
+    transform: translateY(-0px);
 }
 .dam2{
+    justify-content: center;
     width:100%;
     flex:50%;
     
@@ -327,7 +320,8 @@
 
 .page{
     background:white;
-    width:50%;
+    width:90%;
+    max-width:900px;
     height:98%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -350,16 +344,11 @@
     width:100px;
     border:0;
     padding:12px 10px;
-    margin-left:30%;
     outline:none;
     color:#fff;
     background:#000;
     border-radius:6px;
     cursor: pointer;
-}
-
-.sss{
-    padding-left:0px !important;
 }
 
 #dambutton:hover{
@@ -371,20 +360,17 @@
     padding-left:25%;
 }
 
-.dam1 *{
-    padding-left:30%;
-}
-#sss::before{
+
+.sss::after{
     content:'';
     width:10px;
-    height:20%;
+    height:100%;
     background:#000;
     position:absolute;
 
-    left:-4px;
+    left:-40px;
     top:8px;
     
-
 }
 
 
@@ -428,6 +414,29 @@
     max-width:1000px;
     bottom:0;
 }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+
+    .dam > div:first-child{
+        flex:10%;
+    }
+    .dam1{
+        flex:40%;
+    }
+    .dam{
+        flex-direction: column-reverse;
+    }
+
+}
 
 @media screen and (max-width:600px) {
 
@@ -448,15 +457,5 @@
 @media screen and (max-width:901px) {
     .row {
         top: 20px;
-    }
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
     }
 }
