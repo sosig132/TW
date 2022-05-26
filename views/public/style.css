@@ -1,0 +1,702 @@
+.urbex {
+    background-image: url(images/2109.webp);
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#s44{
+    overflow: hidden;
+    background:url(images/Memes-Dark-Man-Wallpapers-Free-Download.jpg) no-repeat center center fixed;
+    background-color:black;
+}
+
+
+.s404{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    width:100%;
+    height:50%;
+}
+
+.s404 h1{
+    color: white;
+    position: relative;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    margin-bottom:136px;
+}
+
+
+
+
+#contac{
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.contact .inline{
+    display:inline-block;
+}
+
+.contact .block{
+    display:block;
+    margin-left:25%;
+    margin-bottom:20px;
+    width:50%;
+    resize:none;
+    box-sizing:border-box;
+    height:10%;
+    min-height:40px;
+    border-radius:4px;
+    border:2px solid;
+    background-color:rgb(230, 230, 230);
+    color:black;
+    font-family:Arial;
+    font-weight:bold;
+}
+
+.contact #form #mesaj{
+    height:25% ;
+    margin-bottom:5px;
+}
+
+@keyframes x{
+    0%{
+        background-color: white;
+    }
+    15%{
+        background-color:red;
+    }
+    30%{
+        background-color:orange;
+    }
+    45%{
+        background-color:yellow;
+    }
+    60%{
+        background-color:green;
+    }
+    75%{
+        background-color:blue;
+    }
+    90%{
+        background-color:indigo;
+    }
+    100%{
+        background-color:white;
+    }
+}
+
+.x{
+    animation:x 6s infinite;
+}
+
+.red{
+    border-color:red !important;
+}
+
+
+.contact #form button{
+    background-color:black;
+    color:white;
+    min-width:40px;
+    width:10%;
+    height:40px;
+    margin-top:0px;
+}
+
+.contact form{
+    width:100%;
+    text-align:center;
+    list-style:none;
+
+}
+
+
+.contact{
+    background-color : white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    max-width:800px;
+    max-height:400px;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.contact p{
+    margin-left:20px;
+}
+
+.about {
+
+    /*background-image: url("images/anders-jilden-medium-5d01610e.jpg");*/
+    background-color:rgb(187, 186, 186);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+
+}
+
+/*.background-image-etc{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    padding-top: 0%;
+    width: 100%;
+}
+
+.background-image-etc img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%
+}*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav #xx{
+    /*padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;*/
+    display: block;
+    /*transition: 0.3s;
+    background-color:#111;  
+    border:0;
+    cursor: pointer;*/
+    bottom:100px;
+
+    position:absolute;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .dropdown-content{
+    visibility: hidden;
+    position:relative;
+    background-color:rgb(14, 13, 13);
+    padding-left:20px;
+    padding-bottom:10px;
+    max-height:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.dropdown-content a{
+    display:block;
+}
+
+.dropdown:hover +.dropdown-content{
+    transition:0.5s;
+    max-height:1000px;
+    visibility:visible;}
+
+.dropdown-content:hover{
+    visibility: visible;
+    max-height:1000px;
+}
+
+
+
+
+
+
+
+#menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    flex: 1;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    visibility: visible;
+    z-index:1;
+}
+
+.img-responsive {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    flex: 1;
+    top: 30px;
+
+}
+
+.modal iframe{
+    width:640px;
+    height:812px; 
+    position:absolute;
+}
+
+#like {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.row {
+    top: 20px;
+    position: absolute;
+    padding: 40px;
+    color: rgb(17, 216, 17);
+    display: flex;
+    z-index: -1;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.row p {
+    font-size: 22px;
+}
+
+.row p a {
+    color: rgb(17, 216, 17);
+}
+
+.col1{
+    padding-top:50px;
+    top:50px;
+    flex: 50%;
+}
+
+.col1 h3{
+    cursor: pointer;
+}
+
+
+.col2 {
+    flex: 50%;
+}
+
+.col2 img {
+    width: 100%;
+}
+
+.col2 video {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.desc {
+    text-align: right !important;
+    font-size: 15px !important;
+}
+
+
+
+.lista-urbex li {
+    display: block;
+    text-align: left;
+
+}
+
+.lista-urbex li a {
+    color: rgb(17, 216, 17);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#ica {
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/*#ica:hover {
+    opacity: 0.7;
+}*/
+
+/*.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}*/
+
+/*.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+}*/
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}*/
+
+/*@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}*/
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dam{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    width:90%;
+    height:auto;
+    border-radius:15px;
+    display:inline-flex;
+    align-items:center;
+    flex-wrap:wrap;    
+}
+
+.dam > div:nth-child(1){
+    flex:20%;
+}
+
+.dam1{
+    text-align:left;
+    width:100%;
+    animation-duration:3s;
+    flex:30%;
+    transform: translateY(-0px);
+}
+.dam2{
+    justify-content: center;
+    width:100%;
+    height:100%;
+    flex:50%;
+    
+}
+
+.page-down{
+    flex:60%;
+}
+
+.page-down h1{
+    margin-left:5%;
+}
+.page-down h3{
+    margin-left:10%;
+    margin-bottom:3px;
+}
+
+.page-down a{
+    margin-left:11%;
+    font-size:15px;
+    text-decoration:none;
+    color:black;
+}
+
+.page-down ul{
+    margin-left:15%;
+}
+
+.page-bottom{
+    flex:20%;
+    display:grid;
+    grid-auto-rows:100px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.page1 h4{
+    margin-left:30%;
+}
+
+.page-top{
+    flex:20%;
+}
+.page-top h1,h4{
+    margin-left:10px;
+}
+
+.page-top h5{
+    display:block;
+    margin-left:30px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.page-top h5:last-of-type{
+    margin-left:0px;
+}
+
+.page-top h5:last-of-type::after{
+    content:"";
+    background-color:grey;
+    width:100%;
+    height:1px;
+    display:block;
+    opacity:0.4;
+    margin-top:4px;
+}
+
+
+
+.page{
+    
+    background:white;
+    width:90%;
+    max-width:900px;
+    height:98%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    overflow:auto;
+}
+
+.page1{
+    flex:20%;
+}
+
+.page2{
+    flex:80%;
+}
+
+#dambutton{
+    width:100px;
+    border:0;
+    padding:12px 10px;
+    outline:none;
+    color:#fff;
+    background:#000;
+    border-radius:6px;
+    cursor: pointer;
+}
+
+#dambutton:hover{
+    width:120px;
+    background-color:red;
+    transition:0.3s;
+}
+
+.dam .dam1 h6{
+    padding-left:25%;
+}
+
+
+.sss::after{
+    content:'';
+    width:10px;
+    height:100%;
+    background:#000;
+    position:absolute;
+
+    left:-40px;
+    top:8px;
+    
+}
+
+
+@keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform:translateX(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight{
+    animation-name: fadeInRight;
+}
+
+.fadeInLeft{
+    animation-name: fadeInLeft;
+}
+
+.dam2 img{
+    position: relative;
+    /*top: 50%;
+    left: 50%;*/
+    animation-duration: 3s;
+    width:100%;
+    height:auto;
+    max-width:1000px;
+    bottom:0;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+
+    .dam > div:first-child{
+        flex:10%;
+    }
+    .dam1{
+        flex:40%;
+    }
+    .dam{
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+
+
+    .row {
+        top: 20px;
+    }
+
+    .col1,
+    .col2 {
+        flex: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:901px) {
+    .row {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:914px){
+    #menu{
+        
+        left:90%;
+        background-color: black;
+    }
+}
+@media screen and (max-height:400px){
+    .contact{
+        overflow:auto;
+    }
+}
+
+@media screen and (max-width:300px){
+    .page2{
+        grid-row-start:3;
+        margin-left:30%;
+    }
+    .page-bottom{
+        grid-auto-rows:50px;
+    }
+}
+

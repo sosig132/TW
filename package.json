@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "name": "proiect-tw",
+  "version": "1.0.0",
+  "description": "21qe",
+  "main": "index.js",
+  "scripts": {
+    "test": "s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosig132/TW.git"
+  },
+  "keywords": [
+    "dawdwa"
+  ],
+  "author": "Andre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sosig132/TW/issues"
+  },
+  "homepage": "https://github.com/sosig132/TW#readme"
+}
