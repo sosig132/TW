@@ -1,47 +1,3 @@
-/*var menuList = document.getElementById("menuList");
-
-function togglemenu() {
-
-    if(menuList.style.maxHeight == "0px"){
-        menuList.style.maxHeight = "10000px";
-        var row = document.getElementById("smth");
-        row.style.top="100px";
-    }
-    else{
-        menuList.style.maxHeight = "0px";
-        var row = document.getElementById("smth");
-        row.style.top="25px";
-    }
-
-}
-
-var dropdown = document.getElementById("drp");
-
-function toggledrop(){
-    if(dropdown.style.display=="none"){
-        var x = document.getElementById("ss");
-        x.style.display="none";
-        dropdown.style.display="block";
-        
-    }
-    else{
-        dropdown.style.display="none";
-    }
-}
-
-var drpdown = document.getElementById("ss");
-
-function toggledrp(){
-    if(drpdown.style.display=="none"){
-        var x = document.getElementById("drp");
-        x.style.display="none";
-        drpdown.style.display="block";
-    }
-    else{
-        drpdown.style.display="none";
-    }
-}
-*/
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -97,7 +53,7 @@ function validation(field, validateFunc){
 
     let isValid = validateFunc(field.value);
     if(!isValid){
-        field.classList.add="red";
+        field.style.borderColor="red !important";
     }
 
     return isValid;
@@ -128,7 +84,8 @@ function send(){
     if(isValidFunc()){
         let m = new Mesaj(form.nume.value, form.prenume.value, form.email.value, form.mesaj.value);
         alert("Multumesc pentru mesaj! Voi reveni cu un email in cel mai scurt timp!");
-        console.log(m.nume);
+
+
         window.localStorage.clear();
         window.localStorage.setItem("nume", m.nume);
         window.localStorage.setItem("prenume", m.prenume);
@@ -165,8 +122,8 @@ if(xx!=null){
         xx.classList.add("x");
     }, 10000)
 
-    xx.addEventListener('click', function(){
-        if(xx.classList="x")
+    window.addEventListener('click', function(e){
+        if(e.target == xx || xx.contains(e.target) && xx.classList=="x")
             xx.classList='';
         else{
             xx.classList.add("x");
@@ -189,7 +146,6 @@ window.onload=function(){
             form.nume.value = window.localStorage.getItem("nume");
             form.prenume.value = window.localStorage.getItem("prenume");
             form.email.value = window.localStorage.getItem("email");
+    }
 }
-}
-
 

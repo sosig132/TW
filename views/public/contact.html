@@ -13,37 +13,57 @@
         <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Despre mine</a>
         <a href="cv.html">CV</a>
-        <a href="hobby.html" class="dropdown">Hobby-uri</a>
+        <a href="#" class="dropdown">Hobby-uri</a>
         <div class="dropdown-content">
-          <a href="baschet.html">Baschet</a>
-          <a href="bicicleta.html">Bicicleta</a>
           <a href="urbex.html">Urbex</a>
         </div>
         <a href="urbex.html" class="dropdown">Urbex</a>
         <div class="dropdown-content">
-          <a href="fort.html">Fort 1 Chitila</a>
+          <a href="fortchitila.html">Fort 1 Chitila</a>
           <a href="fasteco.html">FastEco</a>
-          <a href="blocuri.html">Blocuri Pipera</a>
         </div>
-        <a id = "xx" href="contact.html">Contact</a>
+        <a id="xx" href="contact.html">Contact</a>
       </div>
 
       <span onclick="openNav()"
         ><img src="images/588a64e0d06f6719692a2d10.png" alt="Menu" id="menu"
-      ></span>
+      /></span>
     </nav>
     <div class="contact">
-
-      <form id="form" onsubmit="return false;"> 
+      <form id="form" action="/dam" method="post">
         <h1>Contact me</h1>
-        <input class="block" id="nume" type="text" placeholder="Nume">
-        <input class="block" id="prenume" type="text" placeholder="Prenume">
-        <input class="block" id="email" type="email" placeholder="Email">
-        <textarea id="mesaj" class="block" placeholder="Mesaj"></textarea>
+        <input
+          name="nume"
+          class="block"
+          id="nume"
+          type="text"
+          placeholder="Nume"
+        />
+        <input
+          name="prenume"
+          class="block"
+          id="prenume"
+          type="text"
+          placeholder="Prenume"
+        />
+        <input
+          name="email"
+          class="block"
+          id="email"
+          type="email"
+          placeholder="Email"
+        />
+        <textarea
+          name="mesaj"
+          id="mesaj"
+          class="block"
+          placeholder="Mesaj"
+        ></textarea>
         <button id="submitbutton">Submit</button>
       </form>
-
     </div>
+    <h1 id="oo"></h1>
+    >
     <script src="index.js"></script>
   </body>
 </html>

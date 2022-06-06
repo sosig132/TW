@@ -11,6 +11,15 @@
     background-color:black;
 }
 
+#d{
+    width:100%;
+    max-height:800px;
+}
+
+#fort{
+    width:100%;
+    max-height:600px;
+}
 
 .s404{
     position: absolute;
@@ -142,7 +151,6 @@
 
 .about {
 
-    /*background-image: url("images/anders-jilden-medium-5d01610e.jpg");*/
     background-color:rgb(187, 186, 186);
     background-position: center;
     background-attachment: fixed;
@@ -152,21 +160,6 @@
 
 }
 
-/*.background-image-etc{
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
-    padding-top: 0%;
-    width: 100%;
-}
-
-.background-image-etc img{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    left: 50%
-}*/
 
 .sidenav {
     height: 100%;
@@ -297,6 +290,7 @@
     text-align: left;
     flex-wrap: wrap;
     flex-direction: row;
+    width:90%;
 }
 
 .row p {
@@ -356,30 +350,7 @@
     transition: 0.3s;
 }
 
-/*#ica:hover {
-    opacity: 0.7;
-}*/
 
-/*.modal {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    padding-top: 200px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-}*/
-
-/*.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 1000px;
-}*/
 
 #caption {
     margin: auto;
@@ -392,21 +363,6 @@
     height: 150px;
 }
 
-/*.modal-content,
-#caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}*/
-
-/*@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}*/
 
 #close {
     position: absolute;
